@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enter Student Roll Number</title>
+    <style>
+        body {
+            background-color: #FAFAD2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #003366;
+            display: flex;
+            align-items: center; /* Center vertically with the image */
+            justify-content: center; /* Center horizontally with the image */
+        }
+        #logo {
+            width: 40px; /* Adjust the width as needed */
+            height: auto; /* Automatically adjust the height while maintaining aspect ratio */
+            margin-right: 10px; /* Spacing between image and text */
+        }
+        #rollNumberContainer {
+            width: 80%;
+            margin: 20px auto;
+        }
+        label {
+            display: block;
+            text-align: left;
+            color: #003366;
+        }
+        #rollNumber {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #003366;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #001F4D;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/PhkMcQq/logo.jpg" alt="logo" border="0"></a>
+    </h1>
+    <h2>Enter Student Roll Number</h2>
+    <form action="/getSingleStudentReport" method="post">
+        <div id="rollNumberContainer">
+            <label for="rollNumber">Student Roll Number:</label>
+            <input type="text" id="rollNumber" name="rollNumber" required>
+        </div>
+        <br>
+        <button type="submit">Get Student Report</button>
+    </form>
+</body>
+</html>

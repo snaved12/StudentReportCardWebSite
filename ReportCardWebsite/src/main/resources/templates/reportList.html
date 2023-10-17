@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report List</title>
+</head>
+<body>
+    <h1>Generated Reports</h1>
+    <ul>
+        <li th:each="student : ${students}">
+            <span th:text="${student.name}"></span>
+            <a th:href="'/download/' + ${student.rollNumber}">Download Report</a>
+        </li>
+    </ul>
+</body>
+</html>
