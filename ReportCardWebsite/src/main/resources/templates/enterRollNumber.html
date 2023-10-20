@@ -46,13 +46,28 @@
         button:hover {
             background-color: #001F4D;
         }
+        .back-button {
+            float: left;
+            margin-left: 20px;
+            background-color: #003366;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+       
+        
     </style>
 </head>
 <body>
     <h1>
         <a href="https://imgbb.com/"><img src="https://i.ibb.co/PhkMcQq/logo.jpg" alt="logo" border="0"></a>
     </h1>
-    <h2>Enter Student Roll Number</h2>
+   <a href="/" class="back-button">Back to Home</a>
+    <h1>Enter Student Roll Number</h1>
+    
     <form action="/getSingleStudentReport" method="post">
         <div id="rollNumberContainer">
             <label for="rollNumber">Student Roll Number:</label>
