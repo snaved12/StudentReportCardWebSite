@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STUDENT DATA</title>
+    <style>
+        /* Add your CSS styles here to match your design */
+        body {
+            background-color: #FAFAD2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        table {
+            text-align: left;
+            margin: 0 auto;
+            width: 80%;
+            border-collapse: collapse;
+        }
+        h1 {
+            color: #003366;
+            display: flex;
+            align-items: center; /* Center vertically with the image */
+            justify-content: center; /* Center horizontally with the image */
+        }
+        #logo {
+            width: 40px; /* Adjust the width as needed */
+            height: auto; /* Automatically adjust the height while maintaining aspect ratio */
+            margin-right: 10px; /* Spacing between image and text */
+        }
+        #rollNumberContainer {
+            width: 80%;
+            margin: 20px auto;
+        }
+        label {
+            display: block;
+            text-align: left;
+            color: #003366;
+        }
+        #rollNumber {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #003366;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #001F4D;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+        th {
+            background-color: #003366;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/PhkMcQq/logo.jpg" alt="logo" border="0"></a>
+    </h1>
+    <h2>STUDENT DATA</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Loop through students and display data -->
+            <tr th:each="student : ${students}">
+                <td th:text="${student.rollNumber}">Roll Number</td>
+                <td th:text="${student.name}">Name</td>
+                <td>
+                    <!-- Loop through subjects for the student and display subject details -->
+                    <span th:each="subject : ${student.subjects}">
+                        <span th:text="${subject.subject}">Subject</span>
+                        <br>
+                    </span>
+                </td>
+                <td>
+                    <!-- Loop through subjects for the student and display marks -->
+                    <span th:each="subject : ${student.subjects}">
+                        <span th:text="${subject.marks}">Marks</span>
+                        <br>
+                    </span>
+                </td>
+                <td>
+                    <a th:href="@{/modifyStudent/{studentId}(studentId=${student.id})}">Modify</a>
+					<a th:href="@{/deleteStudent/{studentId}(studentId=${student.id})}">Delete</a>
+
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

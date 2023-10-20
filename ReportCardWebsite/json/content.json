@@ -1,0 +1,100 @@
+{
+  "students": [
+    {
+      "name": "John Doe",
+      "rollNumber": "S001",
+      "subjects": [
+        {"subject": "Maths", "marks": 92, "grade": "A"},
+        {"subject": "Physics", "marks": 88, "grade": "A"},
+        {"subject": "Chemistry", "marks": 85, "grade": "B"},
+        {"subject": "English", "marks": 89, "grade": "A"},
+        {"subject": "History", "marks": 76, "grade": "B"},
+        {"subject": "Biology", "marks": 94, "grade": "A"}
+      ]
+    },
+    {
+      "name": "Jane Smith",
+      "rollNumber": "S002",
+      "subjects": [
+        {"subject": "Maths", "marks": 90, "grade": "A"},
+        {"subject": "Physics", "marks": 85, "grade": "A"},
+        {"subject": "Chemistry", "marks": 78, "grade": "B"},
+        {"subject": "English", "marks": 88, "grade": "A"},
+        {"subject": "History", "marks": 75, "grade": "B"},
+        {"subject": "Biology", "marks": 92, "grade": "A"}
+      ]
+    },
+    {
+      "name": "Alice Johnson",
+      "rollNumber": "S003",
+      "subjects": [
+        {"subject": "Maths", "marks": 94, "grade": "A"},
+        {"subject": "Physics", "marks": 89, "grade": "A"},
+        {"subject": "Chemistry", "marks": 87, "grade": "B"},
+        {"subject": "English", "marks": 92, "grade": "A"},
+        {"subject": "History", "marks": 80, "grade": "B"},
+        {"subject": "Biology", "marks": 95, "grade": "A"}
+      ]
+    },
+    {
+      "name": "David Brown",
+      "rollNumber": "S004",
+      "subjects": [
+        {"subject": "Maths", "marks": 87, "grade": "B"},
+        {"subject": "Physics", "marks": 82, "grade": "B"},
+        {"subject": "Chemistry", "marks": 79, "grade": "C"},
+        {"subject": "English", "marks": 83, "grade": "B"},
+        {"subject": "History", "marks": 70, "grade": "C"},
+        {"subject": "Biology", "marks": 88, "grade": "B"}
+      ]
+    },
+    {
+      "name": "Sarah Lee",
+      "rollNumber": "S005",
+      "subjects": [
+        {"subject": "Maths", "marks": 95, "grade": "A"},
+        {"subject": "Physics", "marks": 90, "grade": "A"},
+        {"subject": "Chemistry", "marks": 88, "grade": "B"},
+        {"subject": "English", "marks": 91, "grade": "A"},
+        {"subject": "History", "marks": 78, "grade": "B"},
+        {"subject": "Biology", "marks": 96, "grade": "A"}
+      ]
+    },
+    {
+      "name": "Michael Wilson",
+      "rollNumber": "S006",
+      "subjects": [
+        {"subject": "Maths", "marks": 88, "grade": "B"},
+        {"subject": "Physics", "marks": 83, "grade": "B"},
+        {"subject": "Chemistry", "marks": 80, "grade": "B"},
+        {"subject": "English", "marks": 85, "grade": "B"},
+        {"subject": "History", "marks": 72, "grade": "C"},
+        {"subject": "Biology", "marks": 89, "grade": "B"}
+      ]
+    },
+    {
+      "name": "Emily Davis",
+      "rollNumber": "S007",
+      "subjects": [
+        {"subject": "Maths", "marks": 92, "grade": "A"},
+        {"subject": "Physics", "marks": 88, "grade": "A"},
+        {"subject": "Chemistry", "marks": 85, "grade": "B"},
+        {"subject": "English", "marks": 89, "grade": "A"},
+        {"subject": "History", "marks": 76, "grade": "B"},
+        {"subject": "Biology", "marks": 94, "grade": "A"}
+      ]
+    },
+    {
+      "name": "Daniel Clark",
+      "rollNumber": "S008",
+      "subjects": [
+        {"subject": "Maths", "marks": 90, "grade": "A"},
+        {"subject": "Physics", "marks": 85, "grade": "A"},
+        {"subject": "Chemistry", "marks": 78, "grade": "B"},
+        {"subject": "English", "marks": 88, "grade": "A"},
+        {"subject": "History", "marks": 75, "grade": "B"},
+        {"subject": "Biology", "marks": 92, "grade": "A"}
+      ]
+    }
+   ]
+}

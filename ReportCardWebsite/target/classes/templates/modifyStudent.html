@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modify Student</title>
+    <style>
+        /* Add your CSS styles here to match your design */
+        body {
+            background-color: #FAFAD2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #003366;
+            display: flex;
+            align-items: center; /* Center vertically with the image */
+            justify-content: center; /* Center horizontally with the image */
+        }
+        #logo {
+            width: 40px; /* Adjust the width as needed */
+            height: auto; /* Automatically adjust the height while maintaining aspect ratio */
+            margin-right: 10px; /* Spacing between image and text */
+        }
+        #rollNumberContainer {
+            width: 80%;
+            margin: 20px auto;
+        }
+        label {
+            display: block;
+            text-align: left;
+            color: #003366;
+        }
+        #rollNumber {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #003366;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #001F4D;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/PhkMcQq/logo.jpg" alt="logo" border="0"></a>
+    </h1>
+    <h2>Modify Student</h2>
+    <form action="@{'/saveStudent/' + student.id}" method="post">
+    <!-- Input fields for editing student details -->
+    <label for="rollNumber">Roll Number:</label>
+    <input type="text" id="rollNumber" name="rollNumber" th:value="${student.rollNumber}" required>
+    <br>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" th:value="${student.name}" required>
+    <br>
+    <label for="subject">Subjects:</label>
+    <!-- Loop through subjects and display subject details -->
+    <div th:each="subject, iterStat : ${student.subjects}">
+        <input type="text" id="subjectName" name="subjects[${iterStat.index}].subject" th:value="${subject.subject}" required>
+        <input type="number" id="subjectMarks" name="subjects[${iterStat.index}].marks" th:value="${subject.marks}" required>
+        <input type="text" id="subjectGrade" name="subjects[${iterStat.index}].grade" th:value="${subject.grade}" required>
+    </div>
+    <br>
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>
